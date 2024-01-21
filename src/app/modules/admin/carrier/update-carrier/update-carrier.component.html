@@ -1,0 +1,298 @@
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+	<mat-tab label="Kurye Güncelleme Sayfası">
+		<div class="flex flex-col flex-auto min-w-0">
+			<form [formGroup]="updateForm" (submit)="onSubmit()"
+				class="flex flex-col mt-8 p-8 pb-4 bg-card rounded-2xl shadow overflow-hidden">
+				<mat-form-field class="w-full">
+					<mat-label>İsim</mat-label>
+					<input type="text" matInput #name formControlName="name" name="name" required>
+					<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:user-circle'"></mat-icon>
+					<mat-error *ngIf="updateForm.get('name').hasError('required')">isim Gerekli
+					</mat-error>
+				</mat-form-field>
+				<mat-form-field class="w-full">
+					<mat-label>Soyisim</mat-label>
+					<input type="text" matInput #surname formControlName="surname" name="surname" required>
+					<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:user-circle'"></mat-icon>
+					<mat-error *ngIf="updateForm.get('surname').hasError('required')">Soyisim Gerekli
+					</mat-error>
+				</mat-form-field>
+				<mat-form-field class="w-full">
+					<mat-label>Kimlik Numarası</mat-label>
+					<input type="text" matInput #nationalIdentityNumber formControlName="nationalIdentityNumber"
+						name="nationalIdentityNumber" required>
+					<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:user-circle'"></mat-icon>
+					<mat-error *ngIf="updateForm.get('nationalIdentityNumber').hasError('required')">Kimlik
+						Numarası Gerekli
+					</mat-error>
+				</mat-form-field>
+				<mat-form-field class="w-full">
+					<mat-label>Telefon</mat-label>
+					<input type="text" matInput #phone formControlName="phone" name="phone" required>
+					<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:phone'"></mat-icon>
+					<mat-error *ngIf="updateForm.get('phone').hasError('required')">Telefon Gerekli
+					</mat-error>
+				</mat-form-field>
+				<mat-form-field class="w-full">
+					<mat-label>Mail Adresi</mat-label>
+					<input type="email" matInput #email formControlName="email" name="email" required>
+					<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:mail'"></mat-icon>
+					<mat-error *ngIf="updateForm.get('email').hasError('required')">Email Gerekli
+					</mat-error>
+				</mat-form-field>
+				<mat-form-field class="w-full">
+					<mat-label for="province">İl Seçiniz</mat-label>
+					<mat-select id="province" #province name="province" required
+						(selectionChange)="onProvinceSelected($event.value)">
+						<mat-option *ngFor="let province of provinces" [value]="province.id">
+							{{province.name}}
+						</mat-option>
+					</mat-select>
+					<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:location-marker'"></mat-icon>
+				</mat-form-field>
+				<mat-form-field class="w-full">
+					<mat-label for="districtId">İlçeyi Seçiniz</mat-label>
+					<mat-select id="districtId" #district required formControlName="districtId" name="districtId"
+						[disabled]="!province.value">
+						<mat-option *ngFor="let district of districts" [value]="district.id">
+							{{district.name}}
+						</mat-option>
+					</mat-select>
+					<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:location-marker'"></mat-icon>
+				</mat-form-field>
+				<span matSnackBarActions>
+					<button class="px-6 ml-3 mt-2" routerLink="store/registry/details/:id" mat-flat-button
+						[color]="'primary'" [disabled]="!updateForm.valid">
+						Kaydet
+						<mat-icon>save</mat-icon>
+					</button>
+				</span>
+			</form>
+		</div>
+	</mat-tab>
+	<mat-tab label="Dosya Yükleme Sayfası">
+		<mat-drawer-container class="flex-auto h-full bg-card dark:bg-transparent"
+			(backdropClick)="onBackdropClicked()">
+			<!-- Drawer -->
+			<mat-drawer class="w-full sm:w-100 dark:bg-gray-900" [mode]="drawerMode" [opened]="false" [position]="'end'"
+				[disableClose]="true" #matDrawer>
+			</mat-drawer>
+			<mat-drawer-content class="flex flex-col bg-gray-100 dark:bg-transparent">
+				<!-- Main -->
+				<div class="flex flex-col flex-auto">
+					<!-- Header -->
+					<div
+						class="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between p-6 sm:py-12 md:px-8 border-b bg-card dark:bg-transparent">
+						<!-- Title -->
+						<div>
+							<div class="text-4xl font-extrabold tracking-tight leading-none">Dosya
+								Yöneticisi</div>
+							<div class="flex items-center mt-0.5 font-medium text-secondary">
+								<ng-container *ngIf="!items?.path.length">
+									{{items?.folders.length}} Klasörler, {{items?.files.length}}
+									Dosyalar
+								</ng-container>
+								<!-- Breadcrumbs -->
+								<ng-container *ngIf="items?.path.length">
+									<div class="flex items-center space-x-2">
+										<a class="text-primary cursor-pointer" [routerLink]="['/apps/file-manager']">Ana
+											Sayfa
+										</a>
+										<div class="">/</div>
+										<ng-container
+											*ngFor="let path of items?.path; let last = last; trackBy: trackByFn">
+											<ng-container *ngIf="!last">
+												<a class="text-primary cursor-pointer"
+													[routerLink]="['/apps/file-manager/folders/', path?.id]">{{path?.name}}</a>
+											</ng-container>
+											<ng-container *ngIf="last">
+												<div>{{path?.name}}</div>
+											</ng-container>
+											<ng-container *ngIf="!last">
+												<div class="">/</div>
+											</ng-container>
+										</ng-container>
+									</div>
+								</ng-container>
+							</div>
+						</div>
+						<!-- Actions -->
+						<div>
+							<button mat-flat-button color="primary" [disabled]="!currentFile" (click)="upload()">
+								Dosya Yükle
+								<mat-icon> attach_file</mat-icon>
+							</button>
+							<input type="file" id="fileInput" (change)="selectFile($event)" name="fileInput" />
+						</div>
+					</div>
+					<!-- Items list -->
+					<ng-container *ngIf="items && (items?.folders.length > 0 || items?.files.length > 0); else noItems">
+						<div class="p-6 md:p-8 space-y-8">
+							<!-- Folders -->
+							<ng-container *ngIf="items?.folders.length > 0">
+								<div>
+									<div class="font-medium">Klasörler</div>
+									<div class="flex flex-wrap -m-2 mt-2">
+										<ng-container *ngFor="let folder of items?.folders; trackBy:trackByFn">
+											<div class="relative w-40 h-40 m-2 p-4 shadow rounded-2xl bg-card">
+												<a class="absolute z-20 top-1.5 right-1.5 w-8 h-8 min-h-8"
+													(click)="$event.preventDefault()"
+													[routerLink]="['./details/', folder?.id]" mat-icon-button>
+													<mat-icon class="icon-size-5"
+														[svgIcon]="'heroicons_solid:information-circle'"></mat-icon>
+												</a>
+												<a class="z-10 absolute inset-0 flex flex-col p-4 cursor-pointer"
+													[routerLink]="['/apps/file-manager/folders/', folder?.id]">
+													<div class="aspect-[9/6]">
+														<div class="flex items-center justify-center h-full">
+															<!-- Icon -->
+															<mat-icon class="icon-size-14 text-hint opacity-50"
+																[svgIcon]="'heroicons_solid:folder'"></mat-icon>
+														</div>
+													</div>
+													<div
+														class="flex flex-col flex-auto justify-center text-center text-sm font-medium">
+														<div class="truncate" [matTooltip]="folder?.name">
+															{{folder?.name}}
+														</div>
+														<ng-container *ngIf="folder?.contents">
+															<div class="text-secondary truncate">
+																{{folder?.contents}}</div>
+														</ng-container>
+													</div>
+												</a>
+											</div>
+										</ng-container>
+									</div>
+								</div>
+							</ng-container>
+							<ng-container *ngIf="items.files.length > 0">
+								<div>
+									<div class="font-medium">Dosyalar</div>
+									<div class="flex flex-wrap -m-2 mt-2">
+										<ng-container *ngFor="let file of items?.files; trackBy:trackByFn">
+											<a class="flex flex-col w-40 h-40 m-2 p-4 shadow rounded-2xl cursor-pointer bg-card"
+												[routerLink]="['./details/', file?.id]">
+												<div class="aspect-[9/6]">
+													<div class="flex items-center justify-center h-full">
+														<!-- Icons -->
+														<div class="relative">
+															<mat-icon class="icon-size-14 text-hint opacity-50"
+																[svgIcon]="'heroicons_solid:document'"></mat-icon>
+															<div class="absolute left-0 bottom-0 px-1.5 rounded text-sm font-semibold leading-5 text-white"
+																[class.bg-red-600]="file?.type === 'PDF'"
+																[class.bg-blue-600]="file?.type === 'DOC'"
+																[class.bg-green-600]="file?.type === 'XLS'"
+																[class.bg-gray-600]="file?.type === 'TXT'"
+																[class.bg-amber-600]="file?.type === 'JPG'">
+																{{file?.type.toUpperCase()}}
+															</div>
+														</div>
+													</div>
+												</div>
+												<div
+													class="flex flex-col flex-auto justify-center text-center text-sm font-medium">
+													<div class="truncate" [matTooltip]="file?.name">
+														{{file?.name}}</div>
+													<ng-container *ngIf="file?.contents">
+														<div class="text-secondary truncate">
+															{{file?.contents}}</div>
+													</ng-container>
+												</div>
+											</a>
+										</ng-container>
+									</div>
+								</div>
+							</ng-container>
+						</div>
+					</ng-container>
+					<ng-template #noItems>
+						<div
+							class="flex flex-auto flex-col items-center justify-center bg-gray-100 dark:bg-transparent">
+							<mat-icon class="icon-size-24" [svgIcon]="'heroicons_outline:folder-open'"></mat-icon>
+							<div class="mt-4 text-2xl font-semibold tracking-tight text-secondary">
+								İçerik Yok.</div>
+						</div>
+					</ng-template>
+				</div>
+			</mat-drawer-content>
+		</mat-drawer-container>
+		<div class="flex flex-col flex-auto p-6 md:p-8">
+			<div class="flex items-center justify-end">
+				<a mat-icon-button [routerLink]="['#']">
+					<mat-icon [svgIcon]="'heroicons_outline:x'"></mat-icon>
+				</a>
+			</div>
+			<div class="mt-8 aspect-[9/6]">
+				<div class="flex items-center justify-center h-full border rounded-lg bg-gray-50 dark:bg-card">
+					<ng-container *ngIf="item?.type === 'folder'">
+						<mat-icon class="icon-size-24 text-hint" [svgIcon]="'heroicons_outline:folder'"></mat-icon>
+					</ng-container>
+					<ng-container *ngIf="item?.type!== 'folder'">
+						<mat-icon class="icon-size-24 text-hint" [svgIcon]="'heroicons_outline:document'"></mat-icon>
+					</ng-container>
+				</div>
+			</div>
+			<div class="flex flex-col items-start mt-8">
+				<div class="text-xl font-medium">{{item?.name}}</div>
+				<div class="mt-1 px-1.5 rounded text-sm font-semibold leading-5 text-white"
+					[class.bg-indigo-600]="item?.type=== 'folder'" [class.bg-red-600]="item?.type === 'PDF'"
+					[class.bg-blue-600]="item?.type === 'DOC'" [class.bg-green-600]="item?.type === 'XLS'"
+					[class.bg-gray-600]="item?.type === 'TXT'" [class.bg-amber-600]="item?.type === 'JPG'">
+					{{item?.type.toUpperCase()}}
+				</div>
+			</div>
+			<div class="text-lg font-medium mt-8">Bilgiler</div>
+			<div class="flex flex-col mt-4 border-t border-b divide-y font-medium">
+				<div class="flex items-center justify-between py-3">
+					<div class="text-secondary">Ekleyen</div>
+					<div>{{item?.createdBy}}</div>
+				</div>
+				<div class="flex items-center justify-between py-3">
+					<div class="text-secondary">Eklenme Zamanı</div>
+					<div>{{item?.createdAt}}</div>
+				</div>
+				<div class="flex items-center justify-between py-3">
+					<div class="text-secondary">Değiştirilme Zamanı</div>
+					<div>{{item?.modifiedAt}}</div>
+				</div>
+				<div class="flex items-center justify-between py-3">
+					<div class="text-secondary">Dosya Boyutu</div>
+					<div>{{item?.size}}</div>
+				</div>
+				<ng-container *ngIf="item?.contents">
+					<div class="flex items-center justify-between py-3">
+						<div class="text-secondary">İçindekiler</div>
+						<div>{{item?.contents}}</div>
+					</div>
+				</ng-container>
+			</div>
+			<div class="flex items-center justify-between mt-8">
+				<div class="text-lg font-medium">Açıklamalar</div>
+				<button mat-icon-button>
+					<mat-icon class="icon-size-5" [svgIcon]="'heroicons_solid:pencil'"></mat-icon>
+				</button>
+			</div>
+			<div class="flex mt-2 border-t">
+				<div class="py-3">
+					<ng-container *ngIf="item?.description">
+						<div>{{item?.description}}</div>
+					</ng-container>
+					<ng-container *ngIf="!item?.description">
+						<div class="italic text-secondary">Açıklama Ekleyin</div>
+					</ng-container>
+				</div>
+			</div>
+			<div class="grid grid-cols-2 gap-4 w-full mt-8">
+				<button class="flex-auto" mat-flat-button [color]="'primary'">
+					İndir
+					<mat-icon>file_download</mat-icon>
+				</button>
+				<button class="flex-auto" mat-flat-button [color]="'warn'">
+					Sil
+					<mat-icon>delete</mat-icon>
+				</button>
+			</div>
+		</div>
+	</mat-tab>
+</mat-tab-group>

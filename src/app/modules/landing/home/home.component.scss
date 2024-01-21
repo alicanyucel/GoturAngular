@@ -1,0 +1,1184 @@
+:host {
+	align-items: center;
+	justify-content: center;
+}
+
+.mediaViewInfo {
+	--web-view-name: Web 1920 – 1;
+	--web-view-id: Web_1920__1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+
+:root {
+	--web-view-ids: Web_1920__1;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+#Web_1920__1 {
+	position: relative;
+	width: 1920px;
+	height: 6092px;
+	background-color: rgba(255, 255, 255, 1);
+	overflow: hidden;
+	--web-view-name: Web 1920 – 1;
+	--web-view-id: Web_1920__1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+
+#Image_10 {
+	opacity: 0.06;
+	position: absolute;
+	width: 2942.75px;
+	height: 2244.002px;
+	left: -511.375px;
+	top: 2670.95px;
+	overflow: visible;
+}
+
+#Image_11 {
+	opacity: 0.06;
+	position: absolute;
+	width: 2187px;
+	height: 2187px;
+	left: -293px;
+	top: 924px;
+	overflow: visible;
+}
+
+#Color_Fill_5 {
+	position: absolute;
+	width: 1518px;
+	height: 1987px;
+	left: -258px;
+	top: -613px;
+	overflow: visible;
+}
+
+#Color_Fill_5_j {
+	position: absolute;
+	width: 2350.216px;
+	height: 2230.945px;
+	left: 409.892px;
+	top: 743.055px;
+	overflow: visible;
+}
+
+#Rectangle_5 {
+	fill: rgba(255, 218, 49, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 7px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_5 {
+	position: absolute;
+	overflow: visible;
+	width: 335px;
+	height: 379px;
+	left: 80px;
+	top: 2940px;
+}
+
+#Rectangle_9 {
+	fill: rgba(255, 218, 49, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 7px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_9 {
+	position: absolute;
+	overflow: visible;
+	width: 335px;
+	height: 379px;
+	left: 550px;
+	top: 2940px;
+}
+
+#Hzl_ve_Gvenli_Tayc {
+	left: 187px;
+	top: 437px;
+	position: absolute;
+	overflow: visible;
+	width: 604px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 100px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Balk_Yazs {
+	left: 828px;
+	top: 1580px;
+	position: absolute;
+	overflow: visible;
+	width: 446px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 90px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Saylar_le_Gtrbunucom {
+	left: 513px;
+	top: 2736px;
+	position: absolute;
+	overflow: visible;
+	width: 927px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 90px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Hizmetlerimiz {
+	left: 715px;
+	top: 3498px;
+	position: absolute;
+	overflow: visible;
+	width: 491px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 90px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Referanslarmz {
+	left: 679px;
+	top: 4547px;
+	position: absolute;
+	overflow: visible;
+	width: 564px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 90px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Hzl_Teslimat {
+	left: 1403px;
+	top: 3885px;
+	position: absolute;
+	overflow: visible;
+	width: 367px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 70px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Anlk_Takip {
+	left: 539px;
+	top: 4286px;
+	position: absolute;
+	overflow: visible;
+	width: 307px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 70px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Raporlama {
+	left: 1074px;
+	top: 4286px;
+	position: absolute;
+	overflow: visible;
+	width: 303px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 70px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Dk_Maliyet {
+	left: 80px;
+	top: 3884px;
+	position: absolute;
+	overflow: visible;
+	width: 397px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 70px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Ticari_Paket_Fiyatlar {
+	left: 654px;
+	top: 3885px;
+	position: absolute;
+	overflow: visible;
+	width: 572px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 70px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#n_0_KURYE {
+	left: 170px;
+	top: 3058px;
+	position: absolute;
+	overflow: visible;
+	width: 157px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#n_0_DKKAN {
+	left: 619px;
+	top: 3058px;
+	position: absolute;
+	overflow: visible;
+	width: 199px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Anasayfa {
+	left: 458px;
+	top: 56px;
+	position: absolute;
+	overflow: visible;
+	width: 104px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Hakkmzda {
+	left: 606px;
+	top: 57px;
+	position: absolute;
+	overflow: visible;
+	width: 131px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Hizmetlerimiz_ {
+	left: 781px;
+	top: 56px;
+	position: absolute;
+	overflow: visible;
+	width: 151px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Referanslar {
+	left: 976px;
+	top: 57px;
+	position: absolute;
+	overflow: visible;
+	width: 128px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#letiim {
+	left: 1148px;
+	top: 57px;
+	position: absolute;
+	overflow: visible;
+	width: 84px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(0, 0, 0, 1);
+	letter-spacing: 0.25px;
+}
+
+#Kurye_Hizmeti_Al {
+	left: 1508px;
+	top: 61px;
+	position: absolute;
+	overflow: visible;
+	width: 155px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 1);
+	letter-spacing: 0.25px;
+}
+
+#Kurye_Ol {
+	left: 1329px;
+	top: 61px;
+	position: absolute;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 1);
+	letter-spacing: 0.25px;
+}
+
+#ye_Girii {
+	left: 1757px;
+	top: 61px;
+	position: absolute;
+	overflow: visible;
+	width: 91px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 1);
+	letter-spacing: 0.25px;
+}
+
+#Rectangle_1 {
+	fill: transparent;
+	stroke: rgba(0, 0, 0, 1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 198px;
+	height: 50px;
+	left: 1486px;
+	top: 47px;
+}
+
+#Rectangle_2 {
+	fill: transparent;
+	stroke: rgba(0, 0, 0, 1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_2 {
+	position: absolute;
+	overflow: visible;
+	width: 185px;
+	height: 50px;
+	left: 1276px;
+	top: 47px;
+}
+
+#Rectangle_4 {
+	fill: transparent;
+	stroke: rgba(0, 0, 0, 1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_4 {
+	position: absolute;
+	overflow: visible;
+	width: 185px;
+	height: 50px;
+	left: 1709px;
+	top: 47px;
+}
+
+#zyro-image_3_kopya {
+	position: absolute;
+	width: 385px;
+	height: 135px;
+	left: 28px;
+	top: 17px;
+	overflow: visible;
+}
+
+#n_5917786_2203_w037_n003_277a_ {
+	position: absolute;
+	width: 610px;
+	height: 788px;
+	left: 1134px;
+	top: 333px;
+	overflow: visible;
+}
+
+#Group_1 {
+	position: absolute;
+	width: 28px;
+	height: 108px;
+	left: 1869px;
+	top: 529px;
+	overflow: visible;
+}
+
+#Ellipse_1 {
+	fill: rgba(255, 218, 49, 1);
+	stroke: rgba(80, 71, 62, 1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Ellipse_1 {
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	height: 28px;
+	left: 0px;
+	top: 0px;
+}
+
+#Ellipse_2 {
+	fill: transparent;
+	stroke: rgba(80, 71, 62, 1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Ellipse_2 {
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	height: 28px;
+	left: 0px;
+	top: 40px;
+}
+
+#Ellipse_3 {
+	fill: transparent;
+	stroke: rgba(80, 71, 62, 1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Ellipse_3 {
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	height: 28px;
+	left: 0px;
+	top: 80px;
+}
+
+#Group_2 {
+	position: absolute;
+	width: 28px;
+	height: 108px;
+	left: 1855px;
+	top: 1968px;
+	overflow: visible;
+}
+
+#Path_1 {
+	fill: rgba(80, 71, 62, 1);
+	stroke: rgba(80, 71, 62, 1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	left: 0px;
+	top: 40px;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Ellipse_2_bh {
+	fill: transparent;
+	stroke: rgba(80, 71, 62, 1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Ellipse_2_bh {
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	height: 28px;
+	left: 0px;
+	top: 0px;
+}
+
+#Ellipse_3_bi {
+	fill: transparent;
+	stroke: rgba(80, 71, 62, 1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Ellipse_3_bi {
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	height: 28px;
+	left: 0px;
+	top: 80px;
+}
+
+#Bir_paragraf_bir_yazda_konu_ve {
+	left: 828px;
+	top: 1721px;
+	position: absolute;
+	overflow: visible;
+	width: 869px;
+	height: 323px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Group_4 {
+	position: absolute;
+	width: 335px;
+	height: 379px;
+	left: 1031px;
+	top: 2940px;
+	overflow: visible;
+}
+
+#Rectangle_10 {
+	fill: rgba(255, 218, 49, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 7px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_10 {
+	position: absolute;
+	overflow: visible;
+	width: 335px;
+	height: 379px;
+	left: 0px;
+	top: 0px;
+}
+
+#n_0KM_YOL {
+	left: 101px;
+	top: 118px;
+	position: absolute;
+	overflow: visible;
+	width: 135px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#Group_3 {
+	position: absolute;
+	width: 335px;
+	height: 379px;
+	left: 1506px;
+	top: 2940px;
+	overflow: visible;
+}
+
+#Rectangle_11 {
+	fill: rgba(255, 218, 49, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 7px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_11 {
+	position: absolute;
+	overflow: visible;
+	width: 335px;
+	height: 379px;
+	left: 0px;
+	top: 0px;
+}
+
+#n_00_TESLMAT {
+	left: 50px;
+	top: 118px;
+	position: absolute;
+	overflow: visible;
+	width: 237px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	color: rgba(80, 71, 62, 1);
+}
+
+#pngwingcom {
+	position: absolute;
+	width: 2015px;
+	height: 670px;
+	left: -47px;
+	top: 5562px;
+	overflow: visible;
+}
+
+#salary-14745 {
+	position: absolute;
+	width: 175px;
+	height: 175px;
+	left: 191px;
+	top: 3674px;
+	overflow: visible;
+}
+
+#store-1977 {
+	position: absolute;
+	width: 197px;
+	height: 197px;
+	left: 845px;
+	top: 3663px;
+	overflow: visible;
+}
+
+#fast-food-delivery-12983_1 {
+	position: absolute;
+	width: 192px;
+	height: 192px;
+	left: 1490px;
+	top: 3657px;
+	overflow: visible;
+}
+
+#laptop-student-12651 {
+	position: absolute;
+	width: 179px;
+	height: 179px;
+	left: 603px;
+	top: 4072px;
+	overflow: visible;
+}
+
+#file-1453_2 {
+	position: absolute;
+	width: 169px;
+	height: 169px;
+	left: 1141px;
+	top: 4082px;
+	overflow: visible;
+}
+
+#Group_5 {
+	position: absolute;
+	width: 1776px;
+	height: 562px;
+	left: 72px;
+	top: 4758px;
+	overflow: visible;
+}
+
+#Rectangle_12 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 8px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_12 {
+	position: absolute;
+	overflow: visible;
+	width: 412px;
+	height: 266px;
+	left: 0px;
+	top: 0px;
+}
+
+#Rectangle_19 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 8px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_19 {
+	position: absolute;
+	overflow: visible;
+	width: 412px;
+	height: 266px;
+	left: 0px;
+	top: 296px;
+}
+
+#Rectangle_13 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 8px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_13 {
+	position: absolute;
+	overflow: visible;
+	width: 412px;
+	height: 266px;
+	left: 454px;
+	top: 0px;
+}
+
+#Rectangle_16 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 8px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_16 {
+	position: absolute;
+	overflow: visible;
+	width: 412px;
+	height: 266px;
+	left: 454px;
+	top: 296px;
+}
+
+#Rectangle_14 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 8px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_14 {
+	position: absolute;
+	overflow: visible;
+	width: 412px;
+	height: 266px;
+	left: 909px;
+	top: 0px;
+}
+
+#Rectangle_17 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 8px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_17 {
+	position: absolute;
+	overflow: visible;
+	width: 412px;
+	height: 266px;
+	left: 909px;
+	top: 296px;
+}
+
+#Rectangle_15 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 8px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_15 {
+	position: absolute;
+	overflow: visible;
+	width: 412px;
+	height: 266px;
+	left: 1364px;
+	top: 0px;
+}
+
+#Rectangle_18 {
+	fill: rgba(255, 255, 255, 1);
+	stroke: rgba(255, 218, 49, 1);
+	stroke-width: 8px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.Rectangle_18 {
+	position: absolute;
+	overflow: visible;
+	width: 412px;
+	height: 266px;
+	left: 1364px;
+	top: 296px;
+}
+
+#Image_1 {
+	position: absolute;
+	width: 261px;
+	height: 157px;
+	left: 75px;
+	top: 54px;
+	overflow: visible;
+}
+
+#Image_7 {
+	position: absolute;
+	width: 261px;
+	height: 157px;
+	left: 1441px;
+	top: 350px;
+	overflow: visible;
+}
+
+#Image_3 {
+	position: absolute;
+	width: 228px;
+	height: 137px;
+	left: 546px;
+	top: 54px;
+	overflow: visible;
+}
+
+#Image_9 {
+	position: absolute;
+	width: 228px;
+	height: 137px;
+	left: 1001px;
+	top: 334px;
+	overflow: visible;
+}
+
+#Image_4 {
+	position: absolute;
+	width: 318px;
+	height: 191px;
+	left: 956px;
+	top: 38px;
+	overflow: visible;
+}
+
+#Image_6 {
+	position: absolute;
+	width: 318px;
+	height: 191px;
+	left: 501px;
+	top: 333px;
+	overflow: visible;
+}
+
+#Image_5 {
+	position: absolute;
+	width: 263px;
+	height: 158px;
+	left: 1439px;
+	top: 53px;
+	overflow: visible;
+}
+
+#Image_8 {
+	position: absolute;
+	width: 263px;
+	height: 158px;
+	left: 73px;
+	top: 349px;
+	overflow: visible;
+}
+
+#zyro-image_3_kopya_cd {
+	position: absolute;
+	width: 588px;
+	height: 206px;
+	left: 72px;
+	top: 5762px;
+	overflow: visible;
+}
+
+#Hakkmzda_ce {
+	left: 778px;
+	top: 5749px;
+	position: absolute;
+	overflow: visible;
+	width: 183px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#ye_Ol {
+	left: 1067px;
+	top: 5749px;
+	position: absolute;
+	overflow: visible;
+	width: 107px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Kurye_Ol_cg {
+	left: 1067px;
+	top: 5813px;
+	position: absolute;
+	overflow: visible;
+	width: 136px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Telefon_0312_231_02_22 {
+	left: 1456px;
+	top: 5845px;
+	position: absolute;
+	overflow: visible;
+	width: 393px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#infotek-cozumcom {
+	left: 1517px;
+	top: 5928px;
+	position: absolute;
+	overflow: visible;
+	width: 332px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Kurye_Hizmeti_Al_cj {
+	left: 1067px;
+	top: 5877px;
+	position: absolute;
+	overflow: visible;
+	width: 259px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Gizlilik_Politikas {
+	left: 778px;
+	top: 5941px;
+	position: absolute;
+	overflow: visible;
+	width: 250px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Aydnlatma_Metni {
+	left: 1067px;
+	top: 5941px;
+	position: absolute;
+	overflow: visible;
+	width: 272px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Adres_Maltepe_zveren_Sk_No27_0 {
+	left: 1356px;
+	top: 5730px;
+	position: absolute;
+	overflow: visible;
+	width: 493px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Hizmetlerimiz_cn {
+	left: 778px;
+	top: 5877px;
+	position: absolute;
+	overflow: visible;
+	width: 211px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#Referaslar {
+	left: 778px;
+	top: 5813px;
+	position: absolute;
+	overflow: visible;
+	width: 159px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0, 0, 0, 1);
+}

@@ -1,0 +1,22 @@
+:host {
+	display: flex;
+	flex-direction: column;
+
+	mat-divider {
+		height: 48px;
+		margin: 0 2rem;
+	}
+
+	map {
+		width: 100%;
+		height: calc(100vh - 433px);
+	}
+
+	div.loading-container {
+		display: flex;
+		width: 100%;
+		height: calc(100vh - 433px);
+		align-items: center;
+		justify-content: center;
+	}
+}

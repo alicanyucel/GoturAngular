@@ -1,0 +1,78 @@
+<div class="flex flex-col items-center justify-center w-full h-full">
+	<div class="w-full max-w-3xl">
+		<div class="max-w-none mx-auto prose prose-sm">
+			<img class="w-20" src="assets/images/logo/logo-text.svg" alt="Logo image">
+			<h1>Kurye Ön Başvuru Sayfası</h1>
+			<div class="flex flex-col flex-auto min-w-0">
+				<form [formGroup]="applicationForm" (submit)="onSubmit()"
+					class="flex flex-col mt-8 p-8 pb-4 bg-card rounded-2xl shadow overflow-hidden">
+					<mat-form-field class="w-full">
+						<mat-label>Kurye ismi</mat-label>
+						<input type="text" matInput #name formControlName="name" name="name" required>
+						<mat-error *ngIf="applicationForm.get('name').hasError('required')">Kurye İsmi Gerekli
+						</mat-error>
+						<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:user-circle'"></mat-icon>
+					</mat-form-field>
+					<mat-form-field class="w-full">
+						<mat-label>Kurye Soyismi</mat-label>
+						<input type="text" matInput #surname formControlName="surname" name="surname" required>
+						<mat-error *ngIf="applicationForm.get('surname').hasError('required')">Soyisim Gerekli
+						</mat-error>
+						<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:user-circle'"></mat-icon>
+					</mat-form-field>
+					<mat-form-field class="w-full">
+						<mat-label>Kimlik Numarası</mat-label>
+						<input type="text" matInput #nationalIdentityNumber formControlName="nationalIdentityNumber"
+							name="nationalIdentityNumber" required>
+						<mat-error *ngIf="applicationForm.get('nationalIdentityNumber').hasError('required')">Kimlik
+							Numarası Gerekli
+						</mat-error>
+						<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:user-circle'"></mat-icon>
+					</mat-form-field>
+					<mat-form-field class="w-full">
+						<mat-label>Cep Telefonu</mat-label>
+						<input type="text" matInput #phone formControlName="phone" name="phone" required>
+						<mat-error *ngIf="applicationForm.get('phone').hasError('required')">Cep Telefonu Gerekli
+						</mat-error>
+						<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:phone'"></mat-icon>
+					</mat-form-field>
+					<mat-form-field class="w-full">
+						<mat-label>Mail Adresi</mat-label>
+						<input type="email" matInput #email formControlName="email" name="email" required>
+						<mat-error *ngIf="applicationForm.get('email').hasError('required')">Email Gerekli
+						</mat-error>
+						<mat-icon class="icon-size-5" matSuffix [svgIcon]="'heroicons_solid:mail'"></mat-icon>
+					</mat-form-field>
+					<mat-form-field class="w-full">
+						<mat-label for="province">İl Seçiniz</mat-label>
+						<mat-select id="province" #province name="province" required
+							(selectionChange)="onProvinceSelected($event.value)">
+							<mat-option *ngFor="let province of provinces" [value]="province.id">
+								{{province.name}}
+							</mat-option>
+						</mat-select>
+						<mat-icon class="icon-size-5" matSuffix
+							[svgIcon]="'heroicons_solid:location-marker'"></mat-icon>
+					</mat-form-field>
+					<mat-form-field class="w-full">
+						<mat-label for="districtId">İlçeyi Seçiniz</mat-label>
+						<mat-select id="districtId" #district required formControlName="districtId" name="districtId"
+							[disabled]="!province.value">
+							<mat-option *ngFor="let district of districts" [value]="district.id">
+								{{district.name}}
+							</mat-option>
+						</mat-select>
+						<mat-icon class="icon-size-5" matSuffix
+							[svgIcon]="'heroicons_solid:location-marker'"></mat-icon>
+					</mat-form-field>
+					<span matSnackBarActions>
+						<button class="px-6 ml-3 mt-2"  mat-flat-button [color]="'primary'"
+							[disabled]="!applicationForm.valid">
+							Kaydet
+						</button>
+					</span>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
